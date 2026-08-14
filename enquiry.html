@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<!-- HTML5 document declaration -->
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ayoba Bakes - Enquiry</title>
+</head>
+
+<body>
+
+    <!-- ===== HEADER with the shared navigation menu ===== -->
+    <header>
+        <h1>Ayoba Bakes</h1>
+        <p>Place a custom order or ask us a question</p>
+
+        <!-- Same navigation menu as every other page -->
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="enquiry.html">Enquiry</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- ===== MAIN content: an enquiry form ===== -->
+    <main>
+
+        <h2>Send Us an Enquiry</h2>
+        <p>
+            Fill in the form below to request a custom cake, place a bulk order, or ask us
+            anything. We usually reply within one working day.
+        </p>
+
+        <!-- A <form> collects information from the visitor -->
+        <!-- action="#" is a placeholder because we are not allowed to use JavaScript or a server -->
+        <form action="#" method="post">
+
+            <!-- Each field has a <label> so the visitor knows what to type -->
+            <!-- The "for" in the label matches the "id" of its input so they are linked -->
+            <p>
+                <label for="fullname">Full Name:</label><br>
+                <!-- <br> creates a single line break so the input sits under the label -->
+                <input type="text" id="fullname" name="fullname">
+                <!-- type="text" is a single-line text box for normal words -->
+            </p>
+
+            <p>
+                <label for="email">Email Address:</label><br>
+                <input type="email" id="email" name="email">
+                <!-- type="email" is a box designed to hold an email address -->
+            </p>
+
+            <p>
+                <label for="phone">Phone Number:</label><br>
+                <input type="tel" id="phone" name="phone">
+                <!-- type="tel" is a box designed to hold a telephone number -->
+            </p>
+
+            <p>
+                <label for="ordertype">Type of Enquiry:</label><br>
+                <!-- <select> creates a drop-down menu of choices -->
+                <select id="ordertype" name="ordertype">
+                    <!-- Each <option> is one choice in the drop-down -->
+                    <option value="cake">Custom Cake</option>
+                    <option value="bulk">Bulk Order</option>
+                    <option value="general">General Question</option>
+                </select>
+            </p>
+
+            <p>
+                <label for="message">Your Message:</label><br>
+                <!-- <textarea> is a large box for typing several lines of text -->
+                <textarea id="message" name="message" rows="5" cols="30"></textarea>
+            </p>
+
+            <p>
+                <!-- This button submits the form when clicked -->
+                <button type="submit">Send Enquiry</button>
+            </p>
+
+        </form>
+
+    </main>
+
+    <!-- ===== FOOTER repeated on every page ===== -->
+    <footer>
+        <p>&copy; 2026 Ayoba Bakes, Polokwane. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>

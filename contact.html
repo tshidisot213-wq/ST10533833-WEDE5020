@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<!-- HTML5 document declaration -->
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ayoba Bakes - Contact</title>
+</head>
+
+<body>
+
+    <!-- ===== HEADER with the shared navigation menu ===== -->
+    <header>
+        <h1>Ayoba Bakes</h1>
+        <p>Come visit us in Polokwane</p>
+
+        <!-- Same navigation menu as every other page -->
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="enquiry.html">Enquiry</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- ===== MAIN content: contact details and two maps ===== -->
+    <main>
+
+        <h2>Contact Details</h2>
+        <p>
+            We would love to hear from you. Reach us using the details below, or simply pop
+            into one of our two Polokwane stores during opening hours.
+        </p>
+
+        <!-- Contact information shown as a list -->
+        <ul>
+            <li>Phone: 015 123 4567</li>
+            <li>Email: hello@ayobabakes.co.za</li>
+            <li>Opening hours: Monday to Saturday, 06:00 &ndash; 18:00</li>
+        </ul>
+
+        <!-- ===== FIRST LOCATION with a map ===== -->
+        <h3>Location 1: City Centre Store</h3>
+        <p>45 Landdros Mare Street, Polokwane Central, 0700</p>
+
+        <!-- An <iframe> embeds another web page (like a map) inside this page -->
+        <!-- Here the src is a placeholder because we are not connecting a real map service -->
+        <iframe src="map-location-city-centre.html"
+                title="Map showing Ayoba Bakes City Centre store location"
+                width="400" height="300">
+            <!-- This text shows only if the browser cannot load the iframe -->
+            Map of the City Centre store could not be loaded.
+        </iframe>
+
+        <!-- ===== SECOND LOCATION with a map ===== -->
+        <h3>Location 2: Mall of the North Kiosk</h3>
+        <p>Shop 12, Mall of the North, R81 Chuenespoort Road, Bendor, 0713</p>
+
+        <!-- The second iframe placeholder for the second store's map -->
+        <iframe src="map-location-mall.html"
+                title="Map showing Ayoba Bakes Mall of the North kiosk location"
+                width="400" height="300">
+            Map of the Mall of the North kiosk could not be loaded.
+        </iframe>
+
+    </main>
+
+    <!-- ===== FOOTER repeated on every page ===== -->
+    <footer>
+        <p>&copy; 2026 Ayoba Bakes, Polokwane. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
