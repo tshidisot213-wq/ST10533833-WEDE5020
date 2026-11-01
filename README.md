@@ -7,7 +7,7 @@ SITEMAP
 - Student Number: ST10533833
 - Module: WEDE5020
 - Date: September 2026
-
+https://ayobabakery.netlify.app
 ## About This Project
 Ayoba Bakes is a 5-page website for a family bakery in Polokwane, Limpopo. The site shows the shop, the products, and contact details for two locations.
 
@@ -86,12 +86,6 @@ Mozilla Developer Network. (2026). Responsive Design. https://developer.mozilla.
 - Name: Tshidiso Moloto Maroga
 - Student Number: ST10533833
 PART 3 READ.ME
-# Ayoba Bakes Website
-
-## Student Information
-- Name: Tshidiso Moloto Maroga
-- Student Number: ST10533833
-- Module: WEDE5020
 - Assessment: POE Parts 1, 2 and 3
 
 ## Live Website
