@@ -124,7 +124,17 @@ This is a 5-page website for Ayoba Bakes, a bakery in Polokwane. It includes Hom
 ## Changelog
 - **Part 1:** Created HTML structure, navigation, and basic content.
 - **Part 2:** Added CSS, Google Fonts, responsive media queries (768px, 480px, 360px).
-- **Part 3:** Added SEO tags, Leaflet map, Lightbox, Accordion, Search filter, and JS form validation. Deployed to Netlify.
+- **Part 3:**
+
+- **Fixes from Part 2:** Added a hamburger menu for mobile screens to fix the missing navigation issue. Added CSS Grid to the products page and `srcset` to images for better responsiveness.
+- **Interactive Map:** Replaced the static iframe maps with a working Leaflet map on the contact page, showing markers for both the City Centre and Mall of the North stores.
+- **Lightbox Gallery:** Added JavaScript to allow users to click product and hero images to view them larger in a full-screen modal.
+- **Accordion FAQ:** Added an interactive FAQ accordion on the About Us page so users can expand and collapse questions.
+- **Dynamic Search:** Added a live search bar on the Products page that filters the product cards as the user types.
+- **Form Validation:** Added JavaScript validation to both the Enquiry and Contact forms. It now shows error messages if fields are empty or invalid.
+- **Form Processing:** The Contact form now generates a `mailto:` link to send the email. The Enquiry form shows a dynamic success message when submitted.
+- **SEO Additions:** Added unique title tags, meta descriptions, and meta keywords to all 5 HTML pages. Created `robots.txt` and `sitemap.xml` files in the root folder.
+- **Deployment:** Deployed the final website to Netlify.
 
 ## References
 W3Schools. (2026). *HTML Tutorial*. Available at: https://www.w3schools.com/html/ (Accessed: 1 November 2026)
