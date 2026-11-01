@@ -1,23 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ayoba Bakes - Products</title>
+    
+    <title>Our Products | Ayoba Bakes</title>
+    <meta name="description" content="View the Ayoba Bakes menu. Fresh breads, croissants, muffins, and custom cakes. Prices from R18.">
+    <meta name="keywords" content="bread prices, bakery menu, vetkoek, croissants, custom cakes Polokwane">
+    
     <link rel="stylesheet" href="css/style.css">
 </head>
-
 <body>
-
-    <!-- Top section with menu -->
     <header>
         <h1>Ayoba Bakes</h1>
         <p>Baked fresh every morning</p>
-
-        <!-- Horizontal navigation -->
+        
+        <button class="menu-toggle" aria-label="Toggle menu">&#9776;</button>
+        
         <nav>
-            <ul>
+            <ul id="nav-menu">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About Us</a></li>
                 <li><a href="products.html" class="active">Products</a></li>
@@ -28,55 +29,47 @@
     </header>
 
     <main>
-
         <h2>Our Baked Goods</h2>
-        <p>
-            Here is a taste of what you can find in our display every day. Prices are shown in
-            South African Rand (R). Custom orders are always welcome &ndash; just ask!
+        
+        <!-- Live Search Filter -->
+        <div class="search-container">
+            <input type="text" id="product-search" placeholder="Search for bread, cakes, pastries...">
+        </div>
+
+        <!-- CSS Grid Layout -->
+        <div class="product-grid">
+            <div class="product-card">
+                <img src="images/fresh-bread-displayed-shelves-bakery-shelf-full-freshly-baked-including-loaves-sourdough-baguettes-other-varieties-327711681.webp" alt="Fresh bread loaves" class="clickable-img">
+                <h3>Fresh Breads</h3>
+                <p>Farmhouse White Loaf – R22<br>Whole Wheat – R25<br>Seed & Grain – R30<br>Vetkoek (6) – R28</p>
+            </div>
+
+            <div class="product-card">
+                <img src="images/images (1).jpeg" alt="Croissants and pastries" class="clickable-img">
+                <h3>Pastries & Treats</h3>
+                <p>Butter Croissant – R18<br>Chocolate Muffin – R20<br>Cinnamon Roll – R22<br>Custard Slice – R24</p>
+            </div>
+
+            <div class="product-card">
+                <img src="images/photo-1566698629409-787a68fc5724.avif" alt="Basket of bread" class="clickable-img">
+                <h3>Cakes</h3>
+                <p>Vanilla Sponge – R180<br>Chocolate Fudge – R220<br>Red Velvet – R240<br>Custom Cakes – On request</p>
+            </div>
+        </div>
+
+        <p style="text-align: center; margin-top: 20px;">
+            Want something special? Head over to our <a href="enquiry.html">enquiry page</a>.
         </p>
-
-        <h3>Breads</h3>
-        <ul>
-            <li>Farmhouse White Loaf &ndash; R22</li>
-            <li>Whole Wheat Health Loaf &ndash; R25</li>
-            <li>Seed &amp; Grain Loaf &ndash; R30</li>
-            <li>Traditional Vetkoek (pack of 6) &ndash; R28</li>
-        </ul>
-
-        <!-- Picture of bread on the shelves -->
-        <img src="images/fresh-bread-displayed-shelves-bakery-shelf-full-freshly-baked-including-loaves-sourdough-baguettes-other-varieties-327711681.webp"
-             alt="A wooden shelf displaying several types of freshly baked bread loaves">
-
-        <h3>Pastries &amp; Treats</h3>
-        <ul>
-            <li>Butter Croissant &ndash; R18</li>
-            <li>Chocolate Muffin &ndash; R20</li>
-            <li>Cinnamon Roll &ndash; R22</li>
-            <li>Custard Slice &ndash; R24</li>
-        </ul>
-
-        <!-- Picture of croissants and pastries -->
-        <img src="images/images (1).jpeg"
-             alt="A metal tray filled with golden croissants, muffins, and cinnamon rolls">
-
-        <h3>Cakes</h3>
-        <ul>
-            <li>Vanilla Sponge Cake (whole) &ndash; R180</li>
-            <li>Chocolate Fudge Cake (whole) &ndash; R220</li>
-            <li>Red Velvet Cake (whole) &ndash; R240</li>
-            <li>Custom Celebration Cakes &ndash; priced on request</li>
-        </ul>
-
-        <p>
-            Want something special for an event? Head over to our
-            <a href="enquiry.html">enquiry page</a> to request a custom order.
-        </p>
-
     </main>
+
+    <div id="lightbox" class="lightbox">
+        <button class="lightbox-close">&times;</button>
+        <img id="lightbox-img" src="" alt="Enlarged view">
+    </div>
 
     <footer>
         <p>&copy; 2026 Ayoba Bakes, Polokwane. All rights reserved.</p>
     </footer>
-
+    <script src="js/script.js"></script>
 </body>
 </html>

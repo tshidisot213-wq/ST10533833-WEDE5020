@@ -1,24 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ayoba Bakes - Home</title>
-    <!-- Link to the external CSS file -->
+    
+    <title>Ayoba Bakes | Freshly Baked in Polokwane</title>
+    <meta name="description" content="Ayoba Bakes is a family-owned bakery in Polokwane. We bake fresh bread, pastries, and custom cakes daily. Visit our City Centre or Mall of the North stores.">
+    <meta name="keywords" content="bakery Polokwane, fresh bread, custom cakes Limpopo, Ayoba Bakes, pastries">
+    
     <link rel="stylesheet" href="css/style.css">
 </head>
-
 <body>
-
-    <!-- Top section with the site name and menu -->
     <header>
         <h1>Ayoba Bakes</h1>
         <p>Freshly baked with love in Polokwane</p>
-
-        <!-- Horizontal navigation links -->
+        
+        <!-- Mobile menu button -->
+        <button class="menu-toggle" aria-label="Toggle menu">&#9776;</button>
+        
+        <!-- Navigation -->
         <nav>
-            <ul>
+            <ul id="nav-menu">
                 <li><a href="index.html" class="active">Home</a></li>
                 <li><a href="about.html">About Us</a></li>
                 <li><a href="products.html">Products</a></li>
@@ -28,47 +30,49 @@
         </nav>
     </header>
 
-    <!-- Main content just for the home page -->
     <main>
-
         <h2>Welcome to Ayoba Bakes</h2>
         <p>
             Ayoba Bakes is a proudly local bakery in the heart of Polokwane, Limpopo.
             Every morning we fire up our ovens before sunrise to bring you warm bread,
-            golden pastries, and cakes made from simple, honest ingredients. Whether you
-            are grabbing a quick vetkoek on your way to work or ordering a birthday cake
-            for someone special, we treat every order like it matters, because to us, it does.
+            golden pastries, and cakes made from simple, honest ingredients.
         </p>
 
-        <!-- Picture of our store front -->
+        <!-- Added srcset for responsive loading -->
         <img src="images/Chestnut_Bakery_Piccadilly_Exterior-5_copy_1944x.webp"
-             alt="The bright storefront of Ayoba Bakes with fresh loaves displayed in the window">
+             srcset="images/Chestnut_Bakery_Piccadilly_Exterior-5_copy_1944x.webp 1000w"
+             sizes="(max-width: 600px) 100vw, 800px"
+             alt="The bright storefront of Ayoba Bakes"
+             class="clickable-img">
 
         <h3>Why People Love Us</h3>
         <ul>
             <li>Everything is baked fresh, every single day.</li>
             <li>We use locally sourced flour and free-range eggs.</li>
             <li>Friendly service from a team that knows your name.</li>
-            <li>Custom cakes for birthdays, weddings, and celebrations.</li>
         </ul>
 
-        <!-- Picture of our bread basket -->
         <img src="images/photo-1566698629409-787a68fc5724.avif"
-             alt="A woven basket filled with freshly baked brown and white bread loaves">
+             alt="A woven basket filled with freshly baked bread loaves"
+             class="clickable-img">
 
         <h3>Come Say Hello</h3>
         <p>
             Ready to taste the difference? Take a look at our
             <a href="products.html">full range of baked goods</a> or
-            <a href="contact.html">visit one of our stores</a> in Polokwane.
+            <a href="contact.html">visit one of our stores</a>.
         </p>
-
     </main>
 
-    <!-- Bottom section with copyright -->
+    <!-- Lightbox container -->
+    <div id="lightbox" class="lightbox">
+        <button class="lightbox-close">&times;</button>
+        <img id="lightbox-img" src="" alt="Enlarged view">
+    </div>
+
     <footer>
         <p>&copy; 2026 Ayoba Bakes, Polokwane. All rights reserved.</p>
     </footer>
-
+    <script src="js/script.js"></script>
 </body>
 </html>

@@ -1,23 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ayoba Bakes - About Us</title>
+    
+    <title>About Us | Ayoba Bakes Polokwane</title>
+    <meta name="description" content="Learn about Ayoba Bakes, our history since 2015, our mission to serve the Polokwane community, and meet our family team.">
+    <meta name="keywords" content="Ayoba Bakes history, bakery team, Mokoena family, Polokwane bakery mission">
+    
     <link rel="stylesheet" href="css/style.css">
 </head>
-
 <body>
-
-    <!-- Top section with menu -->
     <header>
         <h1>Ayoba Bakes</h1>
         <p>Our story, our people, our promise</p>
-
-        <!-- Only one nav tag, sitting horizontal -->
+        
+        <button class="menu-toggle" aria-label="Toggle menu">&#9776;</button>
+        
         <nav>
-            <ul>
+            <ul id="nav-menu">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about.html" class="active">About Us</a></li>
                 <li><a href="products.html">Products</a></li>
@@ -28,32 +29,30 @@
     </header>
 
     <main>
-
         <h2>Our History</h2>
         <p>
             Ayoba Bakes began in 2015 as a small home kitchen run by the Mokoena family.
-            What started as weekend orders for neighbours quickly grew into a beloved local
-            bakery. In 2018 we opened our first proper shop on Landdros Mare Street, and today
+            In 2018 we opened our first shop on Landdros Mare Street, and today
             we proudly serve thousands of happy customers across Polokwane every month.
         </p>
 
-        <!-- Picture of the family baking back in the day -->
         <img src="images/family-baking-together-stockcake.jpg"
-             alt="The Mokoena family baking together in their first small home kitchen in 2015">
+             alt="The Mokoena family baking together" class="clickable-img">
 
-        <h2>Mission &amp; Vision</h2>
-
-        <h3>Our Mission</h3>
-        <p>
-            To bake honest, affordable, high-quality treats that bring the Polokwane
-            community together, one loaf at a time.
-        </p>
-
-        <h3>Our Vision</h3>
-        <p>
-            To become Limpopo's most loved bakery, known for warmth, quality, and a genuine
-            care for both our customers and our local suppliers.
-        </p>
+        <!-- FAQ Accordion -->
+        <h2>Frequently Asked Questions</h2>
+        <div class="accordion-item">
+            <div class="accordion-header">Do you make custom cakes?</div>
+            <div class="accordion-content">
+                <p>Yes! We make custom cakes for birthdays, weddings, and corporate events. Please use our Enquiry page to send us the details.</p>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <div class="accordion-header">Do you use preservatives?</div>
+            <div class="accordion-content">
+                <p>No, we bake fresh daily. For this reason, our bread and pastries are best enjoyed within 2 days.</p>
+            </div>
+        </div>
 
         <h2>Meet the Team</h2>
         <ul>
@@ -61,16 +60,16 @@
             <li><strong>Lerato Mokoena</strong> &ndash; Cake Designer and Co-owner</li>
             <li><strong>Sipho Ndlovu</strong> &ndash; Pastry Chef</li>
         </ul>
-
-        <!-- Picture of the team smiling outside -->
-        <img src="images/images.jpeg"
-             alt="The Ayoba Bakes team smiling together in front of the bakery counter">
-
     </main>
+
+    <div id="lightbox" class="lightbox">
+        <button class="lightbox-close">&times;</button>
+        <img id="lightbox-img" src="" alt="Enlarged view">
+    </div>
 
     <footer>
         <p>&copy; 2026 Ayoba Bakes, Polokwane. All rights reserved.</p>
     </footer>
-
+    <script src="js/script.js"></script>
 </body>
 </html>

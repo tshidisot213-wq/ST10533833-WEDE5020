@@ -1,23 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ayoba Bakes - Enquiry</title>
+    
+    <title>Enquiry | Ayoba Bakes</title>
+    <meta name="description" content="Request a custom cake or place a bulk order with Ayoba Bakes. Fill out our simple enquiry form.">
+    <meta name="keywords" content="custom cake order, bakery enquiry, bulk bread order Polokwane">
+    
     <link rel="stylesheet" href="css/style.css">
 </head>
-
 <body>
-
-    <!-- Top section with menu -->
     <header>
         <h1>Ayoba Bakes</h1>
         <p>Place a custom order or ask us a question</p>
-
-        <!-- Same horizontal menu -->
+        
+        <button class="menu-toggle" aria-label="Toggle menu">&#9776;</button>
+        
         <nav>
-            <ul>
+            <ul id="nav-menu">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About Us</a></li>
                 <li><a href="products.html">Products</a></li>
@@ -28,34 +29,28 @@
     </header>
 
     <main>
-
         <h2>Send Us an Enquiry</h2>
-        <p>
-            Fill in the form below to request a custom cake, place a bulk order, or ask us
-            anything. We usually reply within one working day.
-        </p>
+        
+        <!-- Form success message placeholder -->
+        <div id="form-success" class="success-msg"></div>
 
-        <!-- Contact form -->
-        <form action="#" method="post">
-
+        <!-- Form with JS validation -->
+        <form id="enquiry-form" novalidate>
             <p>
                 <label for="fullname">Full Name:</label>
-                <input type="text" id="fullname" name="fullname" required>
+                <input type="text" id="fullname" placeholder="Your name" required>
+                <span class="error-msg" id="fullname-error">Please enter your name.</span>
             </p>
 
             <p>
                 <label for="email">Email Address:</label>
-                <input type="email" id="email" name="email" required>
-            </p>
-
-            <p>
-                <label for="phone">Phone Number:</label>
-                <input type="tel" id="phone" name="phone">
+                <input type="email" id="email" placeholder="you@email.com" required>
+                <span class="error-msg" id="email-error">Please enter a valid email address.</span>
             </p>
 
             <p>
                 <label for="ordertype">Type of Enquiry:</label>
-                <select id="ordertype" name="ordertype">
+                <select id="ordertype">
                     <option value="cake">Custom Cake</option>
                     <option value="bulk">Bulk Order</option>
                     <option value="general">General Question</option>
@@ -63,21 +58,20 @@
             </p>
 
             <p>
-                <label for="message">Your Message:</label>
-                <textarea id="message" name="message" rows="5" required></textarea>
+                <label for="message">Your Message (min 10 characters):</label>
+                <textarea id="message" rows="5" placeholder="Tell us what you need..." required></textarea>
+                <span class="error-msg" id="message-error">Message must be at least 10 characters.</span>
             </p>
 
             <p>
                 <button type="submit">Send Enquiry</button>
             </p>
-
         </form>
-
     </main>
 
     <footer>
         <p>&copy; 2026 Ayoba Bakes, Polokwane. All rights reserved.</p>
     </footer>
-
+    <script src="js/script.js"></script>
 </body>
 </html>
