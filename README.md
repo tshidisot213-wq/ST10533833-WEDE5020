@@ -1,37 +1,87 @@
-# ST10533833-WEDE5020
-WEDE5020 POE Formative 1 Part 1
+# Ayoba Bakes Website
+SITEMAP
+<img width="1536" height="1024" alt="image" src="https://github.com/user-attachments/assets/5f97d064-5088-44c2-88db-e5a893452ad3" />
 
-# 🥐 Ayoba Bakes - Official Website
+## Student Information
+- Name: Tshidiso Moloto Maroga
+- Student Number: ST10533833
+- Module: WEDE5020
+- Date: September 2026
 
-A lightweight, semantic HTML5 website developed for **Ayoba Bakes**, a community-focused artisanal bakery based in Polokwane, Limpopo. 
+## About This Project
+Ayoba Bakes is a 5-page website for a family bakery in Polokwane, Limpopo. The site shows the shop, the products, and contact details for two locations.
 
-This project was built as a first-year Web Development diploma portfolio submission, focusing on clean structure, semantic markup, web accessibility, and intuitive multi-page navigation without external frameworks or dependencies.
+Part 1 built the HTML structure. Part 2 added CSS styling and responsive design.
 
----
+## Pages
+| Page | File | Content |
+|------|------|---------|
+| Home | index.html | Welcome intro, why people love us, shop images |
+| About | about.html | History, mission, vision, team |
+| Products | products.html | Breads, pastries, cakes with prices |
+| Enquiry | enquiry.html | Contact form for custom orders |
+| Contact | contact.html | Phone, email, hours, two store locations with maps |
 
-## 📌 Project Overview
 
-Ayoba Bakes is transitioning from a local home-kitchen operation into a multi-location enterprise. This static website serves as their central digital presence, providing customers with direct access to daily menus, pricing, custom order inquiries, and location details for their two Polokwane branches.
+## Responsive Design
+The site works on desktop, tablet, and mobile.
 
-### 🌟 Key Features
-* **Semantic HTML5 Markup:** Clean, structured use of `<header>`, `<nav>`, `<main>`, `<section>`, `<article>`, and `<footer>` elements.
-* **Consistent Global Navigation:** Functional relative page linking across all five pages.
-* **Mobile-First Click-to-Call Integration:** Direct telephone links enabling quick phone orders on mobile devices.
-* **Accessible Media:** Fully descriptive `alt` tags on all product, team, and store imagery.
-* **Multi-Location Contact Hub:** Formatted store details and embedded map placeholders for both the City Centre Store and the Mall of the North Kiosk.
+- Desktop: Full horizontal navigation, wide content
+- <img width="1915" height="1036" alt="image" src="https://github.com/user-attachments/assets/6ed91e71-2a4a-472e-934d-dc9ab202d814" />
 
----
+- Tablet (768px and below): Nav wraps, smaller fonts, tighter spacing
+- <img width="862" height="827" alt="image" src="https://github.com/user-attachments/assets/ba120c97-717f-45f7-9a39-0763269229fa" />
 
-## 📂 Project Structure
+- Mobile (480px and below): Nav stacks vertically, full-width buttons, headings shrink
+- <img width="781" height="763" alt="image" src="https://github.com/user-attachments/assets/f6b0f71a-653d-4028-a2ab-86246ceab88d" />
 
-ayoba-bakes/
-│
-├── Css/                # Cascading Style Sheets (CSS) folder
-├── Images/             # Image assets directory
-├── Js/                 # JavaScript scripts folder
-│
-├── about.html          # Bakery history, mission/vision, & team introduction
-├── contact.html        # Store locations, operating hours, & contact details
-├── enquiry.html        # Custom cake & general product inquiry form
-├── index.html          # Homepage with hero banner & featured specials
-└── products.html       # Categorized baked goods menu with ZAR pricing
+
+
+All images use max-width 100% so they never overflow. Headings use clamp() so text scales smoothly between sizes.
+
+## Changelog
+
+### Part 1 fixes
+- Renamed `Images/` folder to lowercase `images/` so the path matches convention
+- Expanded comments throughout to explain what each block does, not just label it
+- Added `class="active"` to the current page link on every nav for visual feedback
+- Tightened up indentation and removed redundant comments
+- Kept all semantic tags (header, nav, main, footer) intact
+
+### Part 2
+- Created css/style.css and linked it to all 5 HTML pages
+- Added Google Fonts import for Playfair Display and Open Sans
+- Added CSS reset
+- Set base body font, size, line-height, colour, background
+- Styled headings with clamp() for fluid scaling
+- Styled links with hover and focus states
+- Styled header with dark brown background and gold accent
+- Styled nav with horizontal layout, gold hover, and active state
+- Styled main content with max-width and horizontal padding
+- Styled buttons with hover lift and active press
+- Styled forms with padded fields, gold borders, focus glow
+- Styled iframes with rounded border and shadow
+- Styled footer with dark background and centred text
+- Added media query at 768px for tablet
+- Added media query at 480px for mobile
+- Added media query at 360px for small phones
+- Nav stacks vertically on mobile with full-width tap targets
+- Buttons go full width on mobile
+- Headings, body text, and images all scale properly across breakpoints
+
+## References
+Google Fonts. (2026). Playfair Display. https://fonts.google.com/specimen/Playfair+Display (Accessed: 20 September 2026)
+
+Google Fonts. (2026). Open Sans. https://fonts.google.com/specimen/Open+Sans (Accessed: 20 September 2026)
+
+W3Schools. (2026). CSS Tutorial. https://www.w3schools.com/css/ (Accessed: 20 September 2026)
+
+W3Schools. (2026). CSS Media Queries. https://www.w3schools.com/css/css_rwd_mediaqueries.asp (Accessed: 20 September 2026)
+
+W3Schools. (2026). CSS Flexbox. https://www.w3schools.com/css/css3_flexbox.asp (Accessed: 20 September 2026)
+
+Mozilla Developer Network. (2026). Responsive Design. https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Responsive_Design (Accessed: 20 September 2026)
+
+## Contact
+- Name: Tshidiso Moloto Maroga
+- Student Number: ST10533833
