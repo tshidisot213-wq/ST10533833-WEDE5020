@@ -85,3 +85,49 @@ Mozilla Developer Network. (2026). Responsive Design. https://developer.mozilla.
 ## Contact
 - Name: Tshidiso Moloto Maroga
 - Student Number: ST10533833
+PART 3 READ.ME
+# Ayoba Bakes Website
+
+## Student Information
+- Name: Tshidiso Moloto Maroga
+- Student Number: ST10533833
+- Module: WEDE5020
+- Assessment: POE Parts 1, 2 and 3
+
+## Live Website
+https://ayobabakery.netlify.app
+
+
+## Project Overview
+This is a 5-page website for Ayoba Bakes, a bakery in Polokwane. It includes Home, About Us, Products, Enquiry, and Contact pages.
+
+## Pages
+- **Home:** Welcome text, images, why people love us.
+- **About Us:** History, interactive FAQ accordion, team.
+- **Products:** Filterable product grid using CSS Grid.
+- **Enquiry:** Form with JavaScript validation.
+- **Contact:** Interactive Leaflet map and email form.
+
+## Part 2 Feedback Fixes
+- Added CSS Grid layout to the Products page for better alignment.
+- Added `srcset` and `sizes` to images for responsive image loading.
+- Fixed the navigation to strictly be one single `<nav>` tag in the header.
+- Renamed all folders to lowercase (`css/` and `images/`).
+
+## Part 3 Features
+- **Interactive Elements:** FAQ Accordion on the About page and an image Lightbox.
+- **Interactive Map:** Replaced iframes with a real Leaflet JS map showing two markers (City Centre and Mall of the North).
+- **Dynamic Content:** Search bar on the Products page filters items live.
+- **SEO:** Added unique title tags, meta descriptions, meta keywords, and `robots.txt` + `sitemap.xml`.
+- **Form Validation:** Both forms validate input and provide immediate error messages. The contact form generates an email using `mailto`.
+
+## Changelog
+- **Part 1:** Created HTML structure, navigation, and basic content.
+- **Part 2:** Added CSS, Google Fonts, responsive media queries (768px, 480px, 360px).
+- **Part 3:** Added SEO tags, Leaflet map, Lightbox, Accordion, Search filter, and JS form validation. Deployed to Netlify.
+
+## References
+W3Schools. (2026). *HTML Tutorial*. Available at: https://www.w3schools.com/html/ (Accessed: 1 November 2026)
+W3Schools. (2026). *CSS Tutorial*. Available at: https://www.w3schools.com/css/ (Accessed: 1 November 2026)
+W3Schools. (2026). *JavaScript Form Validation*. Available at: https://www.w3schools.com/js/js_validation.asp (Accessed: 1 November 2026)
+Leaflet. (2026). *Leaflet Documentation*. Available at: https://leafletjs.com/ (Accessed: 1 November 2026)
